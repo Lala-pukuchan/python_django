@@ -6,15 +6,24 @@
     <title>My Resume</title>
     <style>
       /* テーブルのスタイル */
-      table {
-        border-collapse: collapse; /* 枠線をマージ */
-        width: 100%;
-      }
       th,
       td {
         border: 1px solid black; /* 枠線を可視化 */
         padding: 8px;
         text-align: left;
+      }
+      .info-block {
+        background-color: #f0f0f0; /* Change this to your desired background color */
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .info-block h2 {
+        margin-top: 0;
+      }
+      h1 {
+        text-align: center;
       }
     </style>
   </head>
@@ -22,60 +31,60 @@
     <h1>John Doe's Resume</h1>
 
     <!-- 名前と職歴 -->
-    <section>
-      <h2>Personal Information</h2>
-      <ul>
-        <li><strong>Name:</strong> Yamada</li>
-        <li><strong>Surname:</strong> Taro</li>
-      </ul>
-    </section>
+    <div class="info-block">
+      <section>
+        <h2>Personal Information</h2>
+        <ul>
+          <li><strong>Name:</strong> Yamada</li>
+          <li><strong>Surname:</strong> Taro</li>
+        </ul>
+      </section>
 
-    <!-- スキル -->
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Project Management</li>
-      </ul>
-    </section>
+      <!-- スキル -->
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
 
-    <!-- 職歴 -->
-    <section>
-      <h2>Career Path</h2>
-      <ol>
-        <li>Frontend Developer at XYZ Corp (2018-2020)</li>
-        <li>Fullstack Developer at ABC Ltd (2020-2023)</li>
-        <li>Project Manager at DEF Inc (2023-Present)</li>
-      </ol>
-    </section>
+      <!-- 職歴 -->
+      <section>
+        <h2>Career Path</h2>
+        <ol>
+          <li>Frontend Developer at XYZ Corp (2018-2020)</li>
+          <li>Fullstack Developer at ABC Ltd (2020-2023)</li>
+          <li>Project Manager at DEF Inc (2023-Present)</li>
+        </ol>
+      </section>
 
-    <!-- テーブル -->
-    <section>
-      <h2>Contact Information</h2>
-      <table>
-        <tr>
-          <th>Contact Method</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>taro@example.com</td>
-        </tr>
-        <tr>
-          <td>Phone</td>
-          <td>+123-456-7890</td>
-        </tr>
-        <tr>
-          <td>LinkedIn</td>
-          <td style="border: 1px solid #424242;">
-            <a href="https://linkedin.com/in/taro"
-              >linkedin.com/in/taro</a
-            >
-          </td>
-        </tr>
-      </table>
-    </section>
+      <!-- テーブル -->
+      <section>
+        <h2>Contact Information</h2>
+        <table style="border-collapse: collapse; width: 100%;">
+          <tr>
+            <th>Contact Method</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>taro@example.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>+123-456-7890</td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td style="border: 1px solid #424242">
+              <a href="https://linkedin.com/in/taro">linkedin.com/in/taro</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
   </body>
 </html>
